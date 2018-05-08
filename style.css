@@ -1,0 +1,65 @@
+body {
+    padding-left: 100px;
+}
+svg{
+    width: 300px;
+    height: auto;
+}
+#signature{
+
+    display: none;
+
+}
+.stroke-I{
+fill:none;
+    stroke:#000000;
+    stroke-width:5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-opacity:1;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 535;
+
+    animation: write1 5s 1 ease-in;
+}
+
+.stroke-an{
+    fill:none;
+    stroke:#000000;
+    stroke-width:5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-opacity:1;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 460   ;
+
+    animation: write2 5s 1 ease-in-out;
+}
+.stroke-flourish{
+    fill:none;
+    stroke:#000000;
+    stroke-width:5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-opacity:1;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 1130;
+
+    animation: write3 6s 1 ease-out;
+}
+@keyframes write1 {
+
+    0% {stroke-dashoffset: 535;}
+    33.3% {stroke-dashoffset: 0;}
+}
+@keyframes write2 {
+    0%,33% {stroke-dashoffset: 460;}
+    70% {stroke-dashoffset: 0;}
+}
+@keyframes write3 {
+    0%,45% {stroke-dashoffset: 1130;}
+    100% {stroke-dashoffset: 0;}
+}
+.delayanim--20{
+
+}
